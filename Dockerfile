@@ -6,7 +6,6 @@ RUN mkdir /srv/content
 RUN mkdir /srv/tmp
 
 RUN git init --bare /srv/content
-RUN chown -R www-data:www-data /srv/content
 
 COPY content /srv/tmp
 WORKDIR /srv/tmp
@@ -20,6 +19,8 @@ RUN git remote add local file:///srv/content/
 RUN git add .
 RUN git commit -m "Init content repo with sample data"
 RUN git push --set-upstream local master
+
+RUN chown -R www-data:www-data /srv/content
 
 RUN rm /etc/nginx/conf.d/default.conf
 RUN rm /etc/nginx/nginx.conf
