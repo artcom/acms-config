@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:1.12.2
 
 RUN apt-get update && apt-get install -y git && apt-get install -y fcgiwrap
 
