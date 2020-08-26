@@ -1,0 +1,40 @@
+{
+  "fields": [
+    {
+      "id": "author",
+      "type": "string"
+    },
+    {
+      "id": "title",
+      "type": "string"
+    },
+    {
+      "id": "cover",
+      "type": "enum",
+      "values": [
+        {
+          "id": "hardcover",
+          "name": "Hardcover"
+        },
+        {
+          "id": "paperpack",
+          "name": "Paperback"
+        }
+      ]
+    }
+  ],
+  "fixedChildren": [
+    {
+      "id": "introPage",
+      "template": "book/page"
+    },
+    {
+      "id": "pages",
+      "template": "book/pages"
+    },
+    {
+      "id": "endPage",
+      "template": "book/page"
+    }
+  ]
+}
