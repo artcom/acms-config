@@ -1,5 +1,15 @@
 {
   "title": "Example CMS Data",
   "contentPath": "content",
-  "templatesPath": "templates"
+  "templatesPath": "templates",
+  "languages": [
+    {
+      "id": "de",
+      "name": "German"
+    },
+    {
+      "id": "en",
+      "name": "English"
+    }
+  ]
 }
