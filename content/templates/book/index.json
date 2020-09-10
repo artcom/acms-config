@@ -9,6 +9,16 @@
       "type": "string"
     },
     {
+      "id": "year",
+      "type": "number",
+      "min": 1900,
+      "max": 2030
+    },
+    {
+      "id": "primaryPublication",
+      "type": "boolean"
+    },
+    {
       "id": "cover",
       "type": "enum",
       "values": [
@@ -36,5 +46,8 @@
       "id": "endPage",
       "template": "book/page"
     }
+  ],
+  "children": [
+    "book/citation"
   ]
 }
