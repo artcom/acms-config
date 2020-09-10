@@ -2,5 +2,7 @@
   "template": "book",
   "author": "Scott Chacon 123",
   "title": "Pro Git",
+  "year": 2012,
+  "primaryPublication": true,
   "cover": "paperback"
 }
