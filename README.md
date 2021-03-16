@@ -1,7 +1,7 @@
-# Git JSON CMS content repo
-Basic Git repo initialized with demo content for [git-json-cms](https://github.com/artcom/git-json-cms).
+# ACMS config
+Basic Git repo initialized with demo content for [acms](https://github.com/artcom/acms-compose).
 
 ## Usage
 ```bash
-docker run artcom/git-json-cms-content-repo
+docker run artcom/acms-config
 ```
