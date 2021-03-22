@@ -1,5 +1,5 @@
 # ACMS config
-Basic Git repo initialized with demo content for [acms](https://github.com/artcom/acms-compose).
+Basic Git repo initialized with demo content for the [ACMS](https://github.com/artcom/acms-compose).
 
 ## Usage
 ```bash

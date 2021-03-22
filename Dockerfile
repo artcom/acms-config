@@ -12,7 +12,7 @@ WORKDIR /srv/tmp
 
 RUN git init
 
-RUN git config user.email "init@cms.com"
+RUN git config user.email "init@acms.com"
 RUN git config user.name "docker"
 
 RUN git remote add local file:///srv/content/
