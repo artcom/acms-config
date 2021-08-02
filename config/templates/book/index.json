@@ -31,6 +31,10 @@
           "name": "Paperback"
         }
       ]
+    },
+    {
+      "id": "coverImage",
+      "type": "image"
     }
   ],
   "fixedChildren": [
