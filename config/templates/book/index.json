@@ -9,6 +9,10 @@
       "type": "string"
     },
     {
+      "id": "description",
+      "type": "string"
+    },
+    {
       "id": "year",
       "type": "number",
       "min": 1900,

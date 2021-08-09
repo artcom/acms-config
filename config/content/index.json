@@ -1,6 +1,10 @@
 {
   "template": "book",
-  "author": "Scott Chacon 123",
+  "author": "Scott Chacon",
+  "description" : {
+    "de" : "Die Arbeit",
+    "ar" : "العمل"
+  },
   "title": "Pro Git",
   "year": 2012,
   "primaryPublication": true,
