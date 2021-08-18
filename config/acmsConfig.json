@@ -11,9 +11,9 @@
       "id": "en",
       "name": "English"
     },
-    { "id:": "ar",
+    { "id": "ar",
       "name": "Arabic",
-      "direction": "rtl"
+      "textDirection": "rtl"
     }
   ]
 }
