@@ -1,5 +1,6 @@
 {
   "template": "book",
+  "hiddenForAlice": "text only visible for admins",
   "author": "Scott Chacon",
   "description" : {
     "de" : "Die Arbeit",

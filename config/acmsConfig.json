@@ -15,5 +15,31 @@
       "name": "Arabic",
       "textDirection": "rtl"
     }
+  ],
+  "users": [    
+    {
+      "id": "alice",                      
+      "name": "Alice",                     
+      "permissions": {                     
+        "include": [
+          "**"
+        ],
+        "exclude": [
+          "hiddenForAlice",
+          "citation001/year"
+        ]                       
+      }
+    },                    
+    {
+      "id": "admin",                      
+      "name": "Admin",                     
+      "permissions": {                     
+        "include": [
+          "**"
+        ],
+        "exclude": [
+        ]                       
+      }
+    }
   ]
 }

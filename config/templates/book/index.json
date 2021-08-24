@@ -1,6 +1,10 @@
 {
   "fields": [
     {
+      "id": "hiddenForAlice",
+      "type": "string"
+    },
+    {
       "id": "author",
       "type": "string"
     },
