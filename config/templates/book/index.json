@@ -6,7 +6,8 @@
     },
     {
       "id": "author",
-      "type": "string"
+      "type": "string",
+      "maxLength": 32
     },
     {
       "id": "title",
@@ -14,13 +15,19 @@
     },
     {
       "id": "description",
-      "type": "string"
+      "type": "string",
+      "maxLength": 32,
+      "localization": ["en", "ar"]
     },
     {
       "id": "year",
-      "type": "number",
+      "type": "integer",
       "min": 1900,
       "max": 2030
+    },
+    {
+      "id": "length",
+      "type": "number"
     },
     {
       "id": "primaryPublication",
