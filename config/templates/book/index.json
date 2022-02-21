@@ -21,7 +21,8 @@
     },
     {
       "id": "year",
-      "type": "integer",
+      "type": "number",
+      "integer":  true,
       "min": 1900,
       "max": 2030
     },
@@ -49,7 +50,14 @@
     },
     {
       "id": "coverImage",
-      "type": "image"
+      "type": "image",
+      "height":  1080,
+      "minHeight":  1080,
+      "maxHeight":  1080,
+      "width":  1920,
+      "minWidth":  1920,
+      "maxWidth":  1920,
+      "aspectRatio":  "16:9"
     }
   ],
   "fixedChildren": [
