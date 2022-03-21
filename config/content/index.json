@@ -2,13 +2,17 @@
   "template": "book",
   "hiddenForAlice": "text only visible for admins",
   "author": "Scott Chacon",
-  "title": "Pro Gi mt",
+  "title": "Pro Git",
   "description": {
     "en": "Die Arbeit",
     "ar": "العمل"
   },
   "year": 2012,
   "length": 3.45,
+  "location": {
+    "lat": 50.935173,
+    "lon": 6.953101
+  },
   "primaryPublication": true,
   "cover": "paperback",
   "coverImage": ""
