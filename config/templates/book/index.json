@@ -76,6 +76,10 @@
     {
       "id": "endPage",
       "template": "book/page"
+    },
+    {
+      "id": "media",
+      "template": "book/media"
     }
   ],
   "children": [
