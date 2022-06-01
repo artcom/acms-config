@@ -41,14 +41,19 @@
     {
       "id": "cover",
       "type": "enum",
+      "name" : "My Cover Enum",
       "values": [
         {
-          "id": "hardcover",
+          "value": "hardcover",
           "name": "Hardcover"
         },
         {
-          "id": "paperback",
+          "value": "paperback",
           "name": "Paperback"
+        },
+        {
+          "value" : [3,4,5],
+          "name": "Array"
         }
       ]
     },
