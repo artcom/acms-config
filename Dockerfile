@@ -1,6 +1,6 @@
-FROM nginx:1.19
+FROM nginx:1.22
 
-RUN apt-get update && apt-get install -y git && apt-get install -y fcgiwrap
+RUN apt update && apt install -y git fcgiwrap
 
 RUN mkdir /srv/config
 RUN mkdir /srv/tmp
