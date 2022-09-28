@@ -1,36 +1,28 @@
 {
-    "fields": [
-        {
-            "id": "pdf",
-            "type": "file",
-            "allowedMimeTypes" : [
-                "application/pdf"
-            ]
-        },
-        {
-            "id" : "jpeg",
-            "type" : "image",
-            "allowedMimeTypes" : [
-                "image/jpeg"
-            ]
-        },
-        {
-            "id" : "png",
-            "type" : "image",
-            "allowedMimeTypes" : [
-                "image/png"
-            ]
-        },
-        {
-            "id": "gif",
-            "type": "image",
-            "allowedMimeTypes" : [
-                "image/gif"
-            ]
-        },
-        {
-            "id": "file",
-            "type": "file"
-        }
-    ]
-  }
+  "fields": [
+    {
+      "id": "pdf",
+      "type": "file",
+      "allowedMimeTypes": ["application/pdf"]
+    },
+    {
+      "id": "jpeg",
+      "type": "image",
+      "allowedMimeTypes": ["image/jpeg"]
+    },
+    {
+      "id": "png",
+      "type": "image",
+      "allowedMimeTypes": ["image/png"]
+    },
+    {
+      "id": "gif",
+      "type": "image",
+      "allowedMimeTypes": ["image/gif"]
+    },
+    {
+      "id": "file",
+      "type": "file"
+    }
+  ]
+}

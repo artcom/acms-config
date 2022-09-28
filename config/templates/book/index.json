@@ -22,7 +22,7 @@
     {
       "id": "year",
       "type": "number",
-      "integer":  true,
+      "integer": true,
       "min": 1900,
       "max": 2030
     },
@@ -41,7 +41,7 @@
     {
       "id": "cover",
       "type": "enum",
-      "name" : "My Cover Enum",
+      "name": "My Cover Enum",
       "values": [
         {
           "value": "hardcover",
@@ -52,7 +52,7 @@
           "name": "Paperback"
         },
         {
-          "value" : [3,4,5],
+          "value": [3, 4, 5],
           "name": "Array"
         }
       ]
@@ -60,13 +60,13 @@
     {
       "id": "coverImage",
       "type": "image",
-      "height":  1080,
-      "minHeight":  1080,
-      "maxHeight":  1080,
-      "width":  1920,
-      "minWidth":  1920,
-      "maxWidth":  1920,
-      "aspectRatio":  "16:9"
+      "height": 1080,
+      "minHeight": 1080,
+      "maxHeight": 1080,
+      "width": 1920,
+      "minWidth": 1920,
+      "maxWidth": 1920,
+      "aspectRatio": "16:9"
     }
   ],
   "fixedChildren": [
@@ -87,8 +87,5 @@
       "template": "book/media"
     }
   ],
-  "children": [
-    "book/citation",
-    "book/page"
-  ]
+  "children": ["book/citation", "book/page"]
 }

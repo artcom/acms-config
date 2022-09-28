@@ -1,16 +1,15 @@
 {
-    "fields": [
-      {
-        "id": "source",
-        "type": "string",
-        "multiline": true
-      },
-      {
-        "id": "year",
-        "type": "number",
-        "min": 1900,
-        "max": 2030
-      }
-    ]
-  }
-  
+  "fields": [
+    {
+      "id": "source",
+      "type": "string",
+      "multiline": true
+    },
+    {
+      "id": "year",
+      "type": "number",
+      "min": 1900,
+      "max": 2030
+    }
+  ]
+}

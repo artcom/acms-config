@@ -1,10 +1,9 @@
 {
-    "fields": [
-      {
-        "id": "text",
-        "type": "string",
-        "multiline": true
-      }
-    ]
-  }
-  
+  "fields": [
+    {
+      "id": "text",
+      "type": "string",
+      "multiline": true
+    }
+  ]
+}

@@ -11,34 +11,23 @@
       "id": "en",
       "name": "English"
     },
-    { "id": "ar",
-      "name": "Arabic",
-      "textDirection": "rtl"
-    }
+    { "id": "ar", "name": "Arabic", "textDirection": "rtl" }
   ],
-  "users": [    
+  "users": [
     {
-      "id": "alice",                      
-      "name": "Alice",                     
-      "permissions": {                     
-        "include": [
-          "**"
-        ],
-        "exclude": [
-          "hiddenForAlice",
-          "citation001/year"
-        ]                       
+      "id": "alice",
+      "name": "Alice",
+      "permissions": {
+        "include": ["**"],
+        "exclude": ["hiddenForAlice", "citation001/year"]
       }
-    },                    
+    },
     {
-      "id": "admin",                      
-      "name": "Admin",                     
-      "permissions": {                     
-        "include": [
-          "**"
-        ],
-        "exclude": [
-        ]                       
+      "id": "admin",
+      "name": "Admin",
+      "permissions": {
+        "include": ["**"],
+        "exclude": []
       }
     }
   ]
