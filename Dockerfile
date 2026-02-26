@@ -36,6 +36,7 @@ RUN npm install
 RUN npm install --global
 
 RUN mkdir -p /etc/git/hooks
+RUN ln -s /root/.nvm/versions/node/$(nvm current)/bin/node /usr/local/bin/node
 RUN ln -s /root/.nvm/versions/node/$(nvm current)/bin/configuration-change-hook /etc/git/hooks/post-receive
 RUN chown -R root:www-data /srv/config
 
