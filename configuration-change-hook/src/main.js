@@ -1,13 +1,17 @@
 #!/usr/bin/env node
 
 const fs = require("fs")
-const { connectAsync } = require("@artcom/mqtt-topping")
+const { MqttClient } = require("@artcom/mqtt-topping")
 const git = require("./git")
 
 const CHANGE_EVENT_TOPIC = `${process.env.BASE_TOPIC}/onConfigurationChange`
 
 async function main() {
-  const mqttClient = await connectAsync(process.env.TCP_BROKER_URI, {
+  if (process.env.TCP_BROKER_URI == "null") {
+    console.log("TCP_BROKER_URI is not set, skipping configuration change hook")
+    process.exit(0)
+  }
+  const mqttClient = await MqttClient.connect(process.env.TCP_BROKER_URI, {
     appId: "configuration-change-hook",
   })
   const changedRefs = fs.readFileSync(0).toString().split("\n").slice(0, -1)
