@@ -2,6 +2,16 @@
 
 Basic Git repo initialized with demo content for the [ACMS](https://github.com/artcom/acms-compose).
 
+## Breaking Change
+
+The default branch has changed from `master` to `main`. If you rely on the previous default, pass the `DEFAULT_BRANCH` build argument when building the image:
+
+```bash
+docker build --build-arg DEFAULT_BRANCH=master -t artcom/acms-config .
+```
+
+The `-e DEFAULT_BRANCH=master` runtime override is only needed if the image was built without the correct build argument.
+
 ## Usage
 
 ```bash
