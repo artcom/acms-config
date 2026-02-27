@@ -1,4 +1,14 @@
 server {
+  listen 8080;
+  server_name localhost;
+
+  location = /health {
+    access_log off;
+    return 200;
+  }
+}
+
+server {
   listen 80 default_server;
 
   server_name _;
