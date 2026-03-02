@@ -62,8 +62,10 @@ One message is published per updated ref:
 
 ### Environment Variables
 
-| Variable         | Default | Description                                                                                                   |
-| ---------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
-| `DEFAULT_BRANCH` | `main`  | Default Git branch name. Initialized at build time; reconciled at container startup if overridden at runtime. |
-| `TCP_BROKER_URI` | `null`  | MQTT broker URI (e.g. `mqtt://10.0.0.1`). Set to `null` to disable the hook entirely.                         |
-| `BASE_TOPIC`     | `root`  | Base MQTT topic. The change event is published to `<BASE_TOPIC>/onConfigurationChange`.                       |
+| Variable          | Default | Description                                                                                                   |
+| ----------------- | ------- | ------------------------------------------------------------------------------------------------------------- |
+| `DEFAULT_BRANCH`  | `main`  | Default Git branch name. Initialized at build time; reconciled at container startup if overridden at runtime. |
+| `TCP_BROKER_URI`  | `""`    | MQTT broker URI (e.g. `mqtt://10.0.0.1`). Leave as `""` (empty string) to disable the hook entirely.          |
+| `BROKER_USERNAME` | `""`    | MQTT broker username. Leave as `""` (empty string) to avoid setting broker auth credentials.                  |
+| `BROKER_PASSWORD` | `""`    | MQTT broker password. Leave as `""` (empty string) to avoid setting broker auth credentials.                  |
+| `BASE_TOPIC`      | `root`  | Base MQTT topic. The change event is published to `<BASE_TOPIC>/onConfigurationChange`.                       |

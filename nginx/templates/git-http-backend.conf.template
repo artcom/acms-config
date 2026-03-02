@@ -29,5 +29,7 @@ server {
     fastcgi_param REMOTE_USER anonymous;
     fastcgi_param TCP_BROKER_URI ${TCP_BROKER_URI};
     fastcgi_param BASE_TOPIC ${BASE_TOPIC};
+    fastcgi_param BROKER_USERNAME ${BROKER_USERNAME};
+    fastcgi_param BROKER_PASSWORD ${BROKER_PASSWORD};
   }
 }

@@ -7,13 +7,18 @@ const git = require("./git")
 const CHANGE_EVENT_TOPIC = `${process.env.BASE_TOPIC}/onConfigurationChange`
 
 async function main() {
-  if (process.env.TCP_BROKER_URI == "null") {
+  if (!process.env.TCP_BROKER_URI) {
     console.log("TCP_BROKER_URI is not set, skipping configuration change hook")
     process.exit(0)
   }
-  const mqttClient = await MqttClient.connect(process.env.TCP_BROKER_URI, {
+  const clientOptions = {
     appId: "configuration-change-hook",
-  })
+  }
+  if (process.env.BROKER_USERNAME && process.env.BROKER_PASSWORD) {
+    clientOptions.username = process.env.BROKER_USERNAME
+    clientOptions.password = process.env.BROKER_PASSWORD
+  }
+  const mqttClient = await MqttClient.connect(process.env.TCP_BROKER_URI, clientOptions)
   const changedRefs = fs.readFileSync(0).toString().split("\n").slice(0, -1)
 
   for (const ref of changedRefs) {

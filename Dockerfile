@@ -5,7 +5,13 @@ ARG DEFAULT_BRANCH=main
 ENV NVM_VERSION=0.40.4
 ENV NODE_VERSION=24.14
 ENV DEFAULT_BRANCH=${DEFAULT_BRANCH}
-ENV TCP_BROKER_URI=null
+ENV TCP_BROKER_URI=\"\"
+ENV BROKER_USERNAME=\"\"
+# Default empty password template parameter, can be set to a value to enable authentication in
+# the configuration change hook. It is passed as unset through the fastcgi_param in the nginx
+# configuration, so that it is available in the configuration change hook as an environment
+# variable, but does not have to be set if authentication is not required
+ENV BROKER_PASSWORD=\"\"
 ENV BASE_TOPIC=root
 
 # Install dependencies
@@ -43,6 +49,7 @@ WORKDIR /opt/configuration-change-hook
 RUN npm install
 RUN npm install --global
 
+WORKDIR /root
 RUN mkdir -p /etc/git/hooks
 RUN git config --system core.hooksPath /etc/git/hooks
 RUN ln -s /root/.nvm/versions/node/$(nvm current)/bin/node /usr/local/bin/node
