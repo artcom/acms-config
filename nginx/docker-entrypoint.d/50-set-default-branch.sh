@@ -1,8 +1,12 @@
 #!/usr/bin/env bash
 
-# Set the default branch for the config repository
+set -eo pipefail
 
+# Set the default branch for the config repository
 cd /srv/config
+
+# Ensure correct ownership for the config repository
+chown -R root:www-data /srv/config
 
 # Use the actual existing branch, not HEAD (which may point to a non-existent ref in bare repos)
 CURRENT_BRANCH=$(git branch --format '%(refname:short)' | head -1)
