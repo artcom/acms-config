@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
-/usr/sbin/fcgiwrap -s unix:/var/run/fcgiwrap.socket &
+rm -f /usr/sbin/fcgiwrap
+
+/usr/sbin/fcgiwrap -c 4 -s unix:/var/run/fcgiwrap.socket &
 
 # Wait until the socket is available before nginx starts
 while [ ! -S /var/run/fcgiwrap.socket ]; do
