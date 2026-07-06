@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-rm -f /usr/sbin/fcgiwrap
+rm -f /var/run/fcgiwrap.socket
 
 /usr/sbin/fcgiwrap -c 4 -s unix:/var/run/fcgiwrap.socket &
 
